@@ -5,9 +5,9 @@
 }
 
 
-/* body{
-    
-} */
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 header{
     position: fixed;
@@ -47,6 +47,7 @@ a:active{
 }
 
 main{
+    
     line-height: 2em;
     margin: 3em 1em 1em 1em;
     background-color: #fff;
@@ -188,9 +189,14 @@ div.js-progress{
 /* CONTACT ME PAGE */
 /* FORM  */
 
+main.contact-main{
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+}
+
 form{
     font-family: 'Poppins', sans-serif;
-    background-color: #eee;
     padding: 5em 2em;
     font-size: small;
 }
@@ -204,6 +210,10 @@ input, div.input textarea{
     width: 70vw;
     border: 2px solid #555;
     border-radius: 5px;
+}
+
+input::placeholder{
+    font-size: smaller;
 }
 
 input:focus, 
@@ -248,6 +258,10 @@ form a.mail{
     text-decoration: underline;
 }
 
+main.contact-main footer{
+    margin-top: 10em;
+}
+
 /* WHEN INTERSECTION OBSERVER IS HIDDEN  */
 .hidden{
     opacity: 0;
@@ -272,6 +286,10 @@ main.project-main{
     color: #bbb;
 }
 
+main.project-main h3{
+    text-align: center;
+  }
+
 section.projects{
     padding: 1em .3em;
 }
@@ -282,9 +300,10 @@ section.projects img{
 
 section.projects a{
     display: block;
-    font-size: x-small;
+    font-size: smaller;
     color: #ddd;
     margin: -1em 0 0 1em;
+    text-decoration: underline;
     /* visibility: hidden; */
     text-align: center;
 }
@@ -293,15 +312,42 @@ section.projects a{
 
 
 footer{
-    background-color: #444;
+    background-color: #555;
     color: #ccc;
-    padding: .5em;
+    padding: 1.5em .5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer a{
     color: #ccc;
 }
 
+.socials a{
+  padding: 0 .5rem;
+  font-size: 1em;
+}
+
+.fa-github{
+  color: black;
+}
+
+.fa-twitter{
+  color: #11b4f4;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-whatsapp{
+    color: #1ebe1e;
+}
 
 
 /* MEDIA QUERY  */
