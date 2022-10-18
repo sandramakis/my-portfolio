@@ -16,6 +16,7 @@ header{
     background-color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .08);
     z-index: 10;
+    font-size: small;
 }
 
 
@@ -190,8 +191,8 @@ div.js-progress{
 form{
     font-family: 'Poppins', sans-serif;
     background-color: #eee;
-    height: 100vh;
-    padding: 5em;
+    padding: 5em 2em;
+    font-size: small;
 }
 
 form label{
@@ -203,14 +204,15 @@ input, div.input textarea{
     width: 70vw;
     border: 2px solid #555;
     border-radius: 5px;
-    /* cursor: blue; */
 }
 
-input:focus{
+input:focus, 
+textarea:focus{
     background-color: #eee;
 }
     
-input:hover{
+input:hover,
+textarea:hover{
     opacity: .8;
 }
 
@@ -254,10 +256,50 @@ form a.mail{
     transition: all 1s;
 }
 
+/* WHEN INTERSECTION OBSERVER IS DISPLAYED  */
 .show{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+/* PROJECT PAGE */
+
+main.project-main{
+    padding: 3em 1em;
+    margin: 0;
+    background-color: #222;
+    color: #bbb;
+}
+
+section.projects{
+    padding: 1em .3em;
+}
+
+section.projects img{
+    cursor: pointer;
+}
+
+section.projects a{
+    display: block;
+    font-size: x-small;
+    color: #ddd;
+    margin: -1em 0 0 1em;
+    /* visibility: hidden; */
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+footer{
+    background-color: #444;
+    color: #ccc;
+    padding: .5em;
+}
+
+footer a{
+    color: #ccc;
 }
 
 
@@ -283,4 +325,8 @@ form a.mail{
     .hidden{
         transition: none;
     }
+}
+
+form div{
+    line-height: 2.5rem;
 }
